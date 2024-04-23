@@ -1,0 +1,20 @@
+.trustedBy{
+    .container{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        justify-content: center;
+        background-color: rgb(240, 240, 240);
+
+        img{
+            align-items: center;
+            width:80px;
+            height:70px;
+            padding: 12px;
+        }
+span{
+    color: rgb(182, 181, 181);
+    font-weight:700;
+}
+    }
+}

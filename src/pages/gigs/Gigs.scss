@@ -1,0 +1,256 @@
+.gigs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+    .container{
+        
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        width: 1400px;
+        gap:15px;
+        
+        .navpath{
+            align-items: center;
+            display: flex;
+            gap: 10px;
+            font-size: 20px;
+            border-bottom: 1px solid rgb(236, 235, 235);
+            img{
+                padding-left: 5px;
+                align-items: center;
+                
+             
+            }
+        }
+        h1{
+            align-items: center;
+            display: flex;
+            justify-content: start;
+            padding-bottom: 5px;
+            padding-left: 0;
+            color: rgb(32, 31, 31);
+        }
+
+        p{
+            padding-bottom: 50px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        .left{
+           display: flex;
+            gap: 15px;
+
+          
+           
+
+            button{
+                width: 180px;
+                height: 45px;
+               background-color:white;
+                border: 2px solid rgb(231, 227, 227);
+                border-radius: 10px;
+                font-size: 17px;
+                cursor: pointer;
+                margin: auto;
+                position: relative;
+             
+
+
+                .iconNotSelected{
+                    display: flex;
+                    position: absolute;
+                    top: 5px;
+                    right: 4px;
+                    padding: 4px;
+                    transition: 0.2s;
+                    opacity: 50%;
+
+                
+                    
+
+                 
+                      
+
+
+                }
+                .iconSelected{
+                    
+                        rotate: -180deg;
+                        transition: 0.3s;
+                    
+                   
+                }
+
+              
+            }
+            button:hover{
+                background-color: rgb(228, 228, 228);
+                transition: 0.7s;
+            }
+          
+
+            .menu{
+                display: flex;
+                padding:10px 0px 20px;
+                 width: 170px;
+                 height:190px;
+                 display:block;
+                 
+                 
+                 
+                 flex-direction: column;
+                 position: absolute; 
+                 margin-top: 50px;
+                 box-shadow: 3px 3px 3px 3px rgb(241, 240, 240);
+
+               :hover{
+                background-color: rgb(152, 195, 247);
+               }
+
+               label{
+                display:flex;
+                margin-left: 50px;
+                display: block;
+                
+                padding-bottom: 20px;
+                border-radius: 3%;
+                box-shadow: 0px 2px 0px 0px rgb(241, 240, 240);
+
+                 
+                animation: growDown 300ms ease-in-out forwards;
+                transform-origin: top center; 
+                @keyframes growDown {
+                    0% {
+                        transform: scaleY(0)
+                    }
+                    50% {
+                        transform: scaleY(1.1)
+                    }
+                    100% {
+                        transform: scaleY(1)
+                    }
+                }              
+
+                
+            }
+            .menuRadio{
+                display:flex;
+                margin-left: 20px;
+                display: block;
+                align-items: center;
+
+
+            }
+
+          
+          
+                }
+              
+
+                a{
+                    background-color: white;
+
+                 
+                    display: flex;
+                    gap: 12px;
+                   // border: 1px solid rgb(209, 208, 208);
+                    text-decoration: none;
+                    color: black;
+                    list-style: none;
+                    padding: 15px;
+                    padding-bottom: 20px;
+                    border-radius: 3%;
+                    box-shadow: 0px 2px 0px 0px rgb(241, 240, 240);
+
+                     
+                    animation: growDown 300ms ease-in-out forwards;
+                    transform-origin: top center; 
+                    @keyframes growDown {
+                        0% {
+                            transform: scaleY(0)
+                        }
+                        50% {
+                            transform: scaleY(1.1)
+                        }
+                        100% {
+                            transform: scaleY(1)
+                        }
+                    }                   
+             
+
+                }
+            
+.seller, .budget, .deliveryTime{
+            display: flex;
+            flex-direction: column;
+                        
+        
+        }
+                    
+
+
+    }
+        .right{
+           //position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+        
+           
+            gap: 10px;
+            float: right;
+            padding-top: 0;
+
+
+            .sortBy{
+
+                color:#555;
+                font-weight: 300;
+            }
+
+            .sortType{
+                font-weight: 500;
+
+            }
+
+            img{
+                width: 15px;
+                cursor: pointer;
+            }
+
+            .rightMenu{
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 5px;
+                border:.5px solid rgb(198, 204, 211);
+                position: absolute;
+                top: 30px;
+                right: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                color: #555;
+
+                span{
+                    cursor: pointer;
+                }
+            }
+            
+        }
+        .cards{
+            padding-top: 60px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            flex-wrap:wrap;
+            justify-content: space-between;
+            
+        }
+       
+    }
+  
+}
